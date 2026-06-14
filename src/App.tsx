@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -9,7 +9,7 @@ import CodePlayground from './components/common/CodePlayground';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
@@ -23,7 +23,7 @@ function App() {
         <Footer />
         <CodePlayground />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
